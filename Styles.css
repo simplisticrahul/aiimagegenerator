@@ -1,1 +1,117 @@
 
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff; /* White background */
+    color: #2980b9; /* Darker gray text color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+.header {
+    background-color: #2c3e50; /* Dark blue background color */
+    color: #ecf0f1; /* Light gray text color */
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.logo-container img {
+    width: 100px;
+}
+
+.headline {
+    margin-top: 10px;
+    color: #e74c3c; /* Red text color */
+}
+
+/* Container Styles */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+/* Button Styles */
+button {
+    padding: 10px 20px;
+    background-color: #2980b9; /* Blue button color */
+    color: #ecf0f1; /* Light gray text color */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 10px; /* Rounded corners */
+}
+
+button:hover {
+    background-color: #1f618d; /* Darker blue on hover */
+    border-radius: 10px; /* Maintain rounded corners on hover */
+}
+
+/* Textarea Styles */
+textarea {
+    width: 90%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #ecf0f1; /* Light gray background for textareas */
+    color: #2c3e50; /* Dark blue text color */
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Output Box Styles */
+.output-container {
+    margin-top: 20px;
+}
+
+.output-box {
+    width: 90%;
+    height: 50px;
+    margin-bottom: 5px;
+    padding: 10px;
+    background-color: #ecf0f1; /* Light gray background for output boxes */
+    color: #2c3e50; /* Dark blue text color */
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Input Styles */
+input[type="number"],
+input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #ecf0f1; /* Light gray background for input fields */
+    color: #2c3e50; /* Dark blue text color */
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Label Styles */
+label {
+    color: #2c3e50;
+    margin-right: 10px;
+}
+iframe {
+    border: none; /* Remove default border */
+    border-radius: 1px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    margin: 5px 0; /* Add some space around the iframes */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth animations */
+}
+
+iframe:hover {
+    transform: scale(1.5); /* Slightly enlarge on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
