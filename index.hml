@@ -1,1 +1,71 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentence Separator and Image Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="your-logo.png" alt="Your Logo">  
+        </div>
+        
+    </header>
+    <script src="script.js"></script>
+    <div class="container">
+        <textarea id="inputText" placeholder="Enter your story"></textarea>
+        <button id="splitButton">Split Sentences</button>
+    </div>
+    
+    <input type="text" id="editableBox" placeholder="Enter your style">
+    <button id="pasteTextButton">Apply Styles</button>
+    
+    <div class="output-container" id="outputContainer"></div>
+    
+    <label for="width">Image Width:</label>
+    <input type="number" id="width" value="1856" min="100" step="10">
+    <label for="height">Image Height:</label>
+    <input type="number" id="height" value="1024" min="100" step="10">
+    <label for="seed">Seed:</label>
+    <input type="text" id="seed" placeholder="Enter seed">
+    
+<label for="customModel">Custom Model:</label>
+<input type="text" id="customModel" placeholder="Enter model name">
+
+
+    <!-- Checkbox options for model selection -->
+    <fieldset id="modelSelection">
+        <legend>Choose Model:</legend>
+        <label><input type="checkbox" name="model" value="Flux"> Flux</label><br>
+        <label><input type="checkbox" name="model" value="Flux-Pro"> Flux-Pro</label><br>
+        <label><input type="checkbox" name="model" value="Flux-Realism"> Flux-Realism</label><br>
+        <label><input type="checkbox" name="model" value="Flux-Anime"> Flux-Anime</label><br>
+        <label><input type="checkbox" name="model" value="Flux-3D"> Flux-3D</label><br>
+        <label><input type="checkbox" name="model" value="Flux-CablyAl"> Flux-CablyAl</label><br>
+        <label><input type="checkbox" name="model" value="Turbo"> Turbo</label><br>
+        
+        <label><input type="checkbox" name="model" value="Unity"> Unity</label><br>
+        
+<label><input type="checkbox" name="model" value="Any-Dark"> Any-Dark</label><br>
+
+<label><input type="checkbox" name="model" value="Fantasy"> Fantasy</label><br>
+
+<label><input type="checkbox" name="model" value="Animation"> Animation</label><br>
+
+
+<label><input type="checkbox" name="model" value="Vector"> Vector</label><br>
+
+
+<label><input type="checkbox" name="model" value="Cartoon"> Cartoon</label><br>
+
+<label><input type="checkbox" name="model" value="Comics"> Comics</label><br>
+
+    </fieldset>
+    
+    <button id="fetchButton">Create</button>
+    
+</body>
+</html>
