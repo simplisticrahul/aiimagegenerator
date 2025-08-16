@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 const prompt = encodeURIComponent(sentence.value);
 
                 // Construct the URL with model, dimensions, and seed
-                const url = `https://image.pollinations.ai/prompt/${prompt}?width=${width}&height=${height}&seed=${seed}&nologo=true&nofeed=yes&model=${model}`;
+                const url = `https://image.pollinations.ai/prompt/${prompt}?width=${width}&height=${height}&seed=${seed}&nologo=true&nofeed=yes&model=${model}&referrer=simplisticrahul.github.io`;
 
                 console.log(`Model: ${model}`); // Debug: Log selected model
                 console.log(`URL: ${url}`); // Debug: Log the full URL
